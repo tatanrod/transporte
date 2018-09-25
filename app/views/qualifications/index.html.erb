@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Qualifications</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Value cal</th>
+      <th>Date cal</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @qualifications.each do |qualification| %>
+      <tr>
+        <td><%= qualification.value_cal %></td>
+        <td><%= qualification.date_cal %></td>
+        <td><%= qualification.user %></td>
+        <td><%= link_to 'Show', qualification %></td>
+        <td><%= link_to 'Edit', edit_qualification_path(qualification) %></td>
+        <td><%= link_to 'Destroy', qualification, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Qualification', new_qualification_path %>

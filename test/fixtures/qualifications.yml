@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  value_cal: 1
+  date_cal: 2018-09-17
+  user: one
+
+two:
+  value_cal: 1
+  date_cal: 2018-09-17
+  user: two

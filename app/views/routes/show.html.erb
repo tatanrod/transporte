@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Latitude origin:</strong>
+  <%= @route.latitude_origin %>
+</p>
+
+<p>
+  <strong>Latitude destination:</strong>
+  <%= @route.latitude_destination %>
+</p>
+
+<p>
+  <strong>Length origin:</strong>
+  <%= @route.length_origin %>
+</p>
+
+<p>
+  <strong>Length destination:</strong>
+  <%= @route.length_destination %>
+</p>
+
+<p>
+  <strong>Date rou:</strong>
+  <%= @route.date_rou %>
+</p>
+
+<%= link_to 'Edit', edit_route_path(@route) %> |
+<%= link_to 'Back', routes_path %>

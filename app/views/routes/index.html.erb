@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Routes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Latitude origin</th>
+      <th>Latitude destination</th>
+      <th>Length origin</th>
+      <th>Length destination</th>
+      <th>Date rou</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @routes.each do |route| %>
+      <tr>
+        <td><%= route.latitude_origin %></td>
+        <td><%= route.latitude_destination %></td>
+        <td><%= route.length_origin %></td>
+        <td><%= route.length_destination %></td>
+        <td><%= route.date_rou %></td>
+        <td><%= link_to 'Show', route %></td>
+        <td><%= link_to 'Edit', edit_route_path(route) %></td>
+        <td><%= link_to 'Destroy', route, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Route', new_route_path %>
