@@ -7,7 +7,6 @@ class CreateUsers < ActiveRecord::Migration[5.1]
       t.string :role
       t.boolean :user_vehicle
       t.references :company, foreign_key: true
-
       t.timestamps
     end
   end
